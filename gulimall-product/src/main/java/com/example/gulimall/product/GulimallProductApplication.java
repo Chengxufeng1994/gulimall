@@ -3,6 +3,7 @@ package com.example.gulimall.product;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 /**
  * 1. 整合 MyBatis-Plus
@@ -21,6 +22,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  *          2. 告訴 MyBatisPlus, sql 映射文件
  */
 
+@EnableDiscoveryClient
 @MapperScan("com.example.gulimall.product.dao")
 @SpringBootApplication
 public class GulimallProductApplication {
