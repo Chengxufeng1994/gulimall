@@ -30,6 +30,10 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  *      2. 配置集
  *      3. 配置集 ID
  *      4. 配置分組
+ *  3. 同時加載多個配置集
+ *      1. 微服務任何配置訊息, 任何配置文件都可以放在配置中心
+ *      2. 只需在 bootstrap.properties 配置即可
+ *      3. @Value, @ConfigurationProperties...
  */
 
 
